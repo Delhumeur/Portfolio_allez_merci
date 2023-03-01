@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Oswald:wght@300&display=swap');
+
+body {
+    font-family: 'Gloock', serif;
+    background-color: #000;
+}
+
+/* Nav Bar */
+
+nav .profile img {
+    width: 150px;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+nav ul li {
+
+    padding: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #000;
+    align-items: center;
+}
+
+.sub-menu li {
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+.sub-menu ul li {
+    position: absolute;
+    display: block;
+}
+
+.sub-menu a:hover {
+    color: purple;
+}
+
+/* Bienvenue */
+.page-content {
+    margin: 4%;
+
+}
+
+.page-content header {
+    margin-top: 5%;
+    max-width: 100%;
+}
+
+.page-content header h1 {
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6vw;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    padding: 50px;
+}
+
+p {
+    text-align: center;
+    font-size: 4vw;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    padding: 30px;
+}
+
+.grille {
+
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    grid-gap: 10px;
+}
+
+.grid-item img {
+
+    width: 300px;
+    height: 300px;
+}
+
+
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul li {
+        display: inline-block;
+        font-size: 3vw;
+    }
+
+    .page-content header {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+}
